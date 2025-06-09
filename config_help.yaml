@@ -1,0 +1,34 @@
+
+
+
+hierarchical_reinforce_training:
+  num_help_hubs: 50
+  num_vehicle_types: 5
+  num_demand_types: 7
+  cost_per_time: [1.0, 1.5, 2.0, 2.5, 3.0] # list or tensor of cost factors per vehicle type.
+  full_capacities: # (num_vehicle_types, num_demand_types) of full capacity.
+    - [0.5, 0.7, 0.6, 0.5, 0.4, 0.7, 0.8]
+    - [0.4, 0.8, 0.5, 0.5, 0.6, 0.4, 0.7]
+    - [0.6, 0.9, 0.7, 0.7, 0.8, 0.4, 0.2]
+    - [0.5, 0.4, 0.5, 0.3, 0.6, 0.5, 0.6]
+    - [0.7, 0.7, 0.3, 0.7, 0.5, 0.2, 0.3]
+  travel_time_mean: 1.0
+  travel_time_std: 0.1
+  demand_scaler: 30
+  demand_importance: [1.0, 1.5, 2.0, 1.5, 2.5, 1.0, 3.0] # list or tensor of importance factors for each demand type.
+  demand_cost: # matrix (num_vehicle_types, num_demand_types) representing cost per unit delivery for each demand type per vehicle.
+    - [0.3, 0.4, 0.5, 0.2, 0.4, 0.3, 0.5]
+    - [0.2, 0.3, 0.4, 0.3, 0.5, 0.3, 0.6]
+    - [0.4, 0.5, 0.6, 0.3, 0.4, 0.2, 0.7]
+    - [0.1, 0.2, 0.5, 0.4, 0.5, 0.7, 0.2]
+    - [0.4, 0.3, 0.7, 0.2, 0.4, 0.3, 0.4]
+  batch_size: 32
+  hidden_dim: 256
+  encoder_layers: 1
+  n_heads: 8
+  lr: 0.00005
+  num_epochs: 10000
+  max_grad_norm: 2.0
+  print_interval: 1
+  critic_loss_weight: 0.5
+  num_DCC_layers: 4
