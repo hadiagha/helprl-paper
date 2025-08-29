@@ -1,6 +1,6 @@
 
 
-
+# Hierarchical Reinforcement Training Configuration
 hierarchical_reinforce_training:
   num_help_hubs: 50
   num_vehicle_types: 5

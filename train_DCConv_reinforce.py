@@ -17,7 +17,7 @@ def load_config(config_path="config_help.yaml"):
 
 config = load_config()
 
-# Set up logging.
+# Set up logging for training
 log_folder = "help_logs/hierarchical_reinforce_DCConv"
 os.makedirs(log_folder, exist_ok=True)
 log_filename = os.path.join(

@@ -10,11 +10,16 @@ Disaster response logistics plays a vital role in relief operations by ensuring 
 promptly during emergencies. Although its significance is widely recognized, existing studies tend to focus primarily on pre-disaster
 planning, leaving notable gaps in addressing the complex, dynamic, and unpredictable challenges of real-time disaster response.
 This paper introduces a new framework called HELP-RL (Humanitarian Emergency Logistics Planning with Reinforcement
-Learning) to address these challenges, which are grouped into three main categories: heterogynous fleet types, diverse demand
-types, and stochastic travel times. Together, these reflect the real-world complexities of disaster response logistics, all of which
-require real-time management. The HELP-RL framework incorporates a unique hierarchical decoder to manage the intricate
-action space, paired with an efficiently designed attention-based policy optimizer using the REINFORCE algorithm. This fully
-integrated model is built to adapt dynamically to changing disaster conditions, providing reliable and real-time solutions. To assess
-its performance, we tested the framework using both synthetic and real-world data from wildfire response logistics, drawing on
-actual data to replicate realistic scenarios. The findings show that HELP-RL produces adaptable and optimal policies that effectively
-handle rapid changes, surpassing other reinforcement learning approaches in terms of both efficiency and practical applicability.
+Climate-induced disasters are increasingly affecting human mobility patterns and creating complex challenges for emergency
+response logistics. This paper introduces HELP-RL (Humanitarian Emergency Logistics Planning with Reinforcement Learning), a
+novel framework that addresses the critical intersection of climate-induced disasters, human mobility, and environmental adaptation
+through real-time policy optimization. The framework specifically addresses three key challenges in climate disaster response:
+heterogeneous fleet management for diverse mobility needs, dynamic demand patterns reflecting displaced populations, and
+stochastic travel times due to climate-affected infrastructure. HELP-RL incorporates a unique hierarchical decoder to manage
+complex action spaces and an attention-based policy optimizer using the REINFORCE algorithm, enabling adaptive decision-
+making in rapidly changing disaster environments. We evaluate the framework using both synthetic data and real-world wildfire
+response scenarios, demonstrating its effectiveness in handling climate-induced mobility disruptions. The results show that HELP-
+RL achieves 23-67% improvement in reward scores compared to state-of-the-art reinforcement learning baselines, with inference
+times of 0.14-0.58 seconds across different problem scales (20-50 help centers). The framework demonstrates superior performance
+in handling climate-induced mobility disruptions, with 15-45% better delivery completion rates and 30-60% reduced average delays
+for critical demands compared to traditional approaches.

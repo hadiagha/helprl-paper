@@ -236,4 +236,4 @@ class HierarchicalReinforce(nn.Module):
         action = m.sample()
         log_prob = m.log_prob(action)
         # Return action on CPU to align with the environment.
-        return action.cpu(), log_prob, value
+        return action.cpu(), log_prob, value # return value
