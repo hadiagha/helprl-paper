@@ -1,5 +1,5 @@
 # HELP-RL Paper:
-This is the repository for HELP-RL Paper, Authors: Hadi Aghazadeh and Xin Wang
+This is the repository for HELP-RL Paper accepted to be published in Computers and Operations Research Journal, Authors: Hadi Aghazadeh and Xin Wang
 
 ## Title:
 HELP-RL: Real-Time Policy Optimization with New Hierarchical Decoder for Heterogeneous and Stochastic Disaster Response Logistics
